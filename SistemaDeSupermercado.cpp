@@ -1,17 +1,13 @@
 *
 @Projeto: SMKT MONITOR
 
-@integrantes:
-Caio Rodrigues Lino Mesquita - 202014842
-Caio Vinicius Sanches Moreira - 211027222
-Leonardo Costa Mota - 211027474
 
-@DescriÁ„o: Sistema de caixa de supermercado que registra o invent·rio de produtos do estoque e,
-ao longo do p atualiza o n˙mero de produtos de acordo com as vendas e outras condiÁıes,  ao final do dia o caixa poder· retirar um relatÛrio.
+@Descri√ß√£o: Sistema de caixa de supermercado que registra o invent√°rio de produtos do estoque e,
+ao longo do p atualiza o n√∫mero de produtos de acordo com as vendas e outras condi√ß√µes,  ao final do dia o caixa poder√° retirar um relat√≥rio.
 */
 
 // 1 - POO
-// 2 - ORDENA«√O - QUICKSORT
+// 2 - ORDENA√á√ÉO - QUICKSORT
 // 3 - BUSCA - SENTINELA
 // 4 - LISTA
 
@@ -63,33 +59,33 @@ public:
 
     void abrir_arquivo(int escolha)
     {
-        // caso escolha seja 0, abre o arquivo na ultima linha escrita e È do tipo out
+        // caso escolha seja 0, abre o arquivo na ultima linha escrita e √© do tipo out
         if (escolha == 0)
         {
             lista.open("inventario.txt", ios::out | ios::app);
             if (!lista.is_open())
             {
-                cerr << "N„o foi poss?vel abrir o arquivo | OUT" << endl;
+                cerr << "N√£o foi poss?vel abrir o arquivo | OUT" << endl;
                 getch();
             }
         }
-        // caso escolha seja 1, abre o arquivo na primeira linha e È do tipo in
+        // caso escolha seja 1, abre o arquivo na primeira linha e √© do tipo in
         else if (escolha == 1)
         {
             lista.open("inventario.txt", ios::in);
             if (!lista.is_open())
             {
-                cerr << "N„o foi poss?vel abrir o arquivo | IN" << endl;
+                cerr << "N√£o foi poss?vel abrir o arquivo | IN" << endl;
                 getch();
             }
         }
-        // caso escolha seja outro numero, abre o arquivo na primeira linha e È do tipo out
+        // caso escolha seja outro numero, abre o arquivo na primeira linha e √© do tipo out
         else
         {
             lista.open("inventario.txt", ios::out);
             if (!lista.is_open())
             {
-                cerr << "N„o foi poss?vel abrir o arquivo | OUT" << endl;
+                cerr << "N√£o foi poss?vel abrir o arquivo | OUT" << endl;
                 getch();
             }
         }
